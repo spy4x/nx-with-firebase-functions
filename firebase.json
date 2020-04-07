@@ -1,8 +1,9 @@
 {
   "functions": {
+    "source": "dist/apps/api",
     "predeploy": [
-      "npm --prefix \"$RESOURCE_DIR\" run lint",
-      "npm --prefix \"$RESOURCE_DIR\" run build"
+      "yarn build api --prod",
+      "node tools/scripts/build-firebase-functions-package-json.js"
     ]
   },
   "emulators": {

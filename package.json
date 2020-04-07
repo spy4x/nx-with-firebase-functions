@@ -26,25 +26,34 @@
     "help": "nx help"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "faker": "^4.1.0",
+    "firebase-admin": "^8.10.0",
+    "firebase-functions": "^3.6.0"
+  },
+  "firebase-functions-dependencies": [
+    "firebase-functions",
+    "firebase-admin",
+    "faker"
+  ],
   "devDependencies": {
+    "@nrwl/eslint-plugin-nx": "9.2.2",
+    "@nrwl/jest": "9.2.2",
     "@nrwl/node": "9.2.2",
     "@nrwl/workspace": "9.2.2",
+    "@types/jest": "25.1.4",
+    "@types/faker": "^4.1.11",
     "@types/node": "~8.9.4",
+    "@typescript-eslint/eslint-plugin": "2.19.2",
+    "@typescript-eslint/parser": "2.19.2",
     "dotenv": "6.2.0",
     "eslint": "6.8.0",
-    "firebase-functions": "^3.6.0",
+    "eslint-config-prettier": "6.0.0",
+    "jest": "25.2.3",
     "prettier": "1.19.1",
+    "ts-jest": "25.2.1",
     "ts-node": "~7.0.0",
     "tslint": "~6.0.0",
-    "typescript": "~3.8.3",
-    "@nrwl/jest": "9.2.2",
-    "jest": "25.2.3",
-    "@types/jest": "25.1.4",
-    "ts-jest": "25.2.1",
-    "@nrwl/eslint-plugin-nx": "9.2.2",
-    "@typescript-eslint/parser": "2.19.2",
-    "@typescript-eslint/eslint-plugin": "2.19.2",
-    "eslint-config-prettier": "6.0.0"
+    "typescript": "~3.8.3"
   }
 }
